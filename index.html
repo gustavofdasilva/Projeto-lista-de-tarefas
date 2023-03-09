@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header id="add-task">
@@ -19,12 +19,14 @@
     <section id="no-task">
         <p>No tasks...</p>
     </section>
-    <section id="task" onclick="taskConfig()">
-        <section>
-            <h1>Task Title...</h1>
-            <p>Here it goes what the task is about</p>
+    <section id="tasks">
+        <section id="task">
+            <section>
+                <h1>Task Title...</h1>
+                <p>Here it goes what the task is about</p>
+            </section>
+            <input type="checkbox" name="check" id="check" onclick="taskDone()">
         </section>
-        <input type="checkbox" name="check" id="check" checked>
     </section>
 </body>
 </html>
