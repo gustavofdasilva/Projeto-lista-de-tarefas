@@ -6,27 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tarefas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <script defer src="script.js"></script>
+    <script src="anime-master/lib/anime.min.js"></script>
 </head>
 <body>
     <header id="add-task">
         <section>
-            <input type="text" name="text" id="title" placeholder="Title...">
-            <input type="text" name="text" id="about" placeholder="About...">
+            <input type="text" name="titles" id="title" placeholder="Título..." autocomplete="off" >
+            <input type="text" name="abouts" id="about" placeholder="Sobre..." autocomplete="off" >
         </section>
-        <button id="button"><img src="images/icons/plus.svg" alt="" onclick="addTask()"></button>
+        <button id="button" onclick="addTask()"><img src="images/icons/plus.svg" alt=""></button>
     </header>
     <section id="no-task">
-        <p>No tasks...</p>
+        <p>Sem tarefas...</p>
     </section>
     <section id="tasks">
-        <section id="task">
-            <section>
-                <h1>Task Title...</h1>
-                <p>Here it goes what the task is about</p>
-            </section>
-            <input type="checkbox" name="check" id="check" onclick="taskDone()">
-        </section>
     </section>
+    <footer>
+        <p>Desenvolvido por: <a href="https://github.com/gustavofdasilva" target="_blank">Gustavo F. Silva</a></p>
+    </footer>
 </body>
 </html>
